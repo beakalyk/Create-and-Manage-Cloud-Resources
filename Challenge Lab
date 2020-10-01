@@ -11,7 +11,7 @@ Task 2: Create a Kubernetes service cluster
 	2.1 Create a cluster (in the us-east1 region) to host the service
 		gcloud config set compute/zone us-east1-b
 		gcloud container clusters create nucleus-webserver1
-		gcloud container cluster get-credentials nucleus-webserver1
+		gcloud container clusters get-credentials nucleus-webserver1
 
 	2.2 Use the Docker container hello-app (`gcr.io/google-samples/hello-app:2.0`) as a place holder,the team will replace the container with their own work later
 		kubectl create deployment hello-app --image=gcr.io/google-samples/hello-app:2.0
